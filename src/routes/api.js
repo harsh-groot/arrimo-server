@@ -18,11 +18,4 @@ api.use("/auth/local/register", registerUserRouter);
 api.use("/user", userRouter);
 api.use("/event", eventRouter);
 
-/**
- * Creating middleware to authenticate the API requests
- * *****************************************************  */
-api.use(require("../middleware/tokenChecker"));
-
-/******************************************************* */
-
 module.exports = api;
