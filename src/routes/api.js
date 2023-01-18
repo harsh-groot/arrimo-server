@@ -4,7 +4,7 @@ const path = require("path");
 const registerUserRouter = require("./registration.router");
 const loginUserRouter = require("./login.router");
 const userTokenRouter = require("./token.router");
-const meRouter = require("./me.router");
+
 const userRouter = require("./user.router");
 const eventRouter = require("./event.router");
 
@@ -27,7 +27,5 @@ api.use("/auth/token", userTokenRouter);
 api.use(require("../middleware/tokenChecker"));
 
 /******************************************************* */
-
-api.use("/users/me", meRouter);
 
 module.exports = api;

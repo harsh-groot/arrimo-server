@@ -5,24 +5,20 @@
       "src": "./src/*",
       "use": "@vercel/node"
     },
-      {
-      "src": "./src/middleware/*",
-      "use": "@vercel/node"
-    },
-        {
+
+    {
       "src": "./src/models/*",
       "use": "@vercel/node"
     },
-        {
+    {
       "src": "./src/routes/*",
       "use": "@vercel/node"
     },
- 
-        {
+
+    {
       "src": "./src/services/*",
       "use": "@vercel/node"
     }
-    
   ],
   "routes": [
     {
