@@ -13,10 +13,7 @@
       "src": "./src/models/*",
       "use": "@vercel/node"
     },
-        {
-      "src": "./src/routes/*",
-      "use": "@vercel/node"
-    },
+ 
         {
       "src": "./src/services/*",
       "use": "@vercel/node"
