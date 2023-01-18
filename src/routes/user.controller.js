@@ -1,4 +1,4 @@
-const { getUsers, deleteUser, updateUser } = require("../../models/user.model");
+const { getUsers, deleteUser, updateUser } = require("../models/user.model");
 
 async function httpUsers(req, res) {
   return getUsers(req, res);

@@ -1,4 +1,4 @@
-const { verifyAndSignUpUser } = require("../../models/user.model");
+const { verifyAndSignUpUser } = require("../models/user.model");
 
 async function httpRegisterUser(req, res) {
   const user = req.body;

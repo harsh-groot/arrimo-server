@@ -1,20 +1,18 @@
 const express = require("express");
-
 const path = require("path");
 
-const registerUserRouter = require("./users/registration.router");
-const loginUserRouter = require("./users/login.router");
-const userTokenRouter = require("./users/token.router");
-const meRouter = require("./users/me.router");
-const userRouter = require("./users/user.router");
-const eventRouter = require("./events/event.router");
+const registerUserRouter = require("./registration.router");
+const loginUserRouter = require("./login.router");
+const userTokenRouter = require("./token.router");
+const meRouter = require("./me.router");
+const userRouter = require("./user.router");
+const eventRouter = require("./event.router");
 
 const api = express.Router();
 
 api.get("/", function (req, res) {
   res.sendFile(path.join(__dirname, "../index.html"));
 });
-
 
 api.use("/auth/local", loginUserRouter);
 api.use("/auth/local/register", registerUserRouter);

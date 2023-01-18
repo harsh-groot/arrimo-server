@@ -3,7 +3,7 @@ const {
   deleteEvent,
   getEvents,
   updateEvent,
-} = require("../../models/event.model");
+} = require("../models/event.model");
 
 async function httpAddEvent(req, res) {
   const { event, date } = req.body;
