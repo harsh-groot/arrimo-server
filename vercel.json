@@ -4,6 +4,10 @@
     {
       "src": "./src/*",
       "use": "@vercel/node"
+    },
+     {
+      "src": "./src/middleware/*",
+      "use": "@vercel/node"
     }
   ],
   "routes": [
