@@ -3,7 +3,6 @@ const path = require("path");
 
 const registerUserRouter = require("./registration.router");
 const loginUserRouter = require("./login.router");
-const userTokenRouter = require("./token.router");
 
 const userRouter = require("./user.router");
 const eventRouter = require("./event.router");
@@ -18,8 +17,6 @@ api.use("/auth/local", loginUserRouter);
 api.use("/auth/local/register", registerUserRouter);
 api.use("/user", userRouter);
 api.use("/event", eventRouter);
-
-api.use("/auth/token", userTokenRouter);
 
 /**
  * Creating middleware to authenticate the API requests
