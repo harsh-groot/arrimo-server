@@ -18,7 +18,7 @@
       "use": "@vercel/node"
     },     
        {
-      "src": "./src/routes/users/",
+      "src": "./src/routes/users/*",
       "use": "@vercel/node"
     },  
     {
